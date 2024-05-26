@@ -1,390 +1,55 @@
-print("Hello, World!")
-from flask import Flask, request
-import requests
-from time import sleep
-import time
-from datetime import datetime
-app = Flask(__name__)
-app.debug = True
 
-headers = {
-    'Connection': 'keep-alive',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
-    'referer': 'www.google.com'
-}
+(😘( y) ;D =]] (Y) 73R! <KUW9RI BH3N> K0 P9T9K K3 { C |-| 0 D U N G 9 } L0C9L [ P ! L L 3 ] (Y) <3 ;)"
+ ( y) ;D =]] (Y) 73R! <M99W> K3 S99T|-| [ G 9 N G - B 9 N G ] K99-RU (Y) <3 :)
+     ( y) ;D =]] (Y) 73R! <KH9ND9N> K9 [ B |-| 0 S D 9 ] N!!ST3 N9B00T K9R DUNG9 (y) <3 ;)( y) ;D =]] (Y) 73R11 <BH3WN> K3 [ B 0 0 B S ] D9B9U SL0WLY SL0WLY (Y) 3:) : ( y) ;D =]] (Y) 73R! <SIS> K3 S99T|-| [ G 9 N G - B 9 N G ] K99-RU (Y) <3 :)
+=  😈__ __)
+= R0CKY SBR KE PILE T3RII BH3N KO CHUD K9R BH9G J9UG9 M9IIN
+😆😁 
+( y) ;D =]] (Y) 73R! <B99J!!> K3 S99T|-| [ G 9 N G - B 9 N G ] K99-RU (Y) <3 :)
+    
+ ( y) ;D =]] (Y) 73R! <B99J!!> K0 9PN! J99N B9N9 K9R F!!R { C |-| 0 D U N G A } (Y) <3 ;)
+ 
+ ( y) ;D =]] (Y) 73R11 <M99W> K3 [ B 0 0 B S ] D9B9U SL0WLY SL0WLY (Y) 3:) :/
+     
+    T3RII BH3N CHUD J9YGI BR0 😊😘
+    
+T3RII M9 KI CHUT M9RU BHIKHRI KI    9UL9D H3 TU
+🙂😁
+T3RII CHOTII BH3N KI G9ND M9RU 🥹🫣
 
-@app.route('/', methods=['GET', 'POST'])
-def send_message():
-    if request.method == 'POST':
-        access_token = request.form.get('accessToken')
-        thread_id = request.form.get('threadId')
-        mn = request.form.get('kidx')
-        time_interval = int(request.form.get('time'))
+T3RI 99PI KI CHUT M3 L9ND DH9L K9R BHUL J9UG9 M9IIN 🫶😔
 
-        txt_file = request.files['txtFile']
-        messages = txt_file.read().decode().splitlines()
+T3RII S9STII R9NDI BH3N K9 BH0SD9 F9D K9R BH9G J9UG9 M9IIN🦅😐
 
-        while True:
-            try:
-                for message1 in messages:
-                    api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                    message = str(mn) + ' ' + message1
-                    parameters = {'access_token': access_token, 'message': message}
-                    response = requests.post(api_url, data=parameters, headers=headers)
-                    if response.status_code == 200:
-                        print(f"Message sent using token {access_token}: {message}")
-                    else:
-                        print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep(time_interval)
-            except Exception as e:
-                print(f"Error while sending message using token {access_token}: {message}")
-                print(e)
-                time.sleep(30)
+T3RI DIDI KI CHUT M9R K9R US3  K9B9R M3 L9TW9 DING9 😬😹
 
 
-    return '''
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aditya sharma Server</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body{
-      background-color: #f8f9fa;
-    }
-    .container{
-      max-width: 500px;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-    .header{
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .btn-submit{
-      width: 100%;
-      margin-top: 10px;
-    }
-    .footer{
-      text-align: center;
-      margin-top: 20px;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <header class="header mt-4">
-    <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                     BY
-    AADIYA D >3:)
-    <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------»ADITYA D ltaftricks  </h1>
-  </header>
+T3RI M99 KI G9ND M3 H9TH DH9L K9R US3  G9ND M3 TUJH3  DH9L DUNG9 BHIK9RI KI 9LUD 🚶‍♀️🙇 
 
-  <div class="container">
-    <form action="/" method="post" enctype="multipart/form-data">
-      <div class="mb-3">
-        <label for="accessToken">Enter Your Token:</label>
-        <input type="text" class="form-control" id="accessToken" name="accessToken" required>
-      </div>
-      <div class="mb-3">
-        <label for="threadId">Enter Convo/Inbox ID:</label>
-        <input type="text" class="form-control" id="threadId" name="threadId" required>
-      </div>
-      <div class="mb-3">
-        <label for="kidx">Enter Hater Name:</label>
-        <input type="text" class="form-control" id="kidx" name="kidx" required>
-      </div>
-      <div class="mb-3">
-        <label for="txtFile">Select Your Notepad File:</label>
-        <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-      </div>
-      <div class="mb-3">
-        <label for="time">Speed in Seconds:</label>
-        <input type="number" class="form-control" id="time" name="time" required>
-      </div>
-      <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-    </form>
-  </div>
-  <footer class="footer">
-    <p>&copy; Developed by Zeeshan Altat 2024. All Rights Reserved.</p>
-    <p>Convo/Inbox Loader Tool</p>
-    <p>Keep enjoying  <a href="https://github.com/zeeshanqureshi0</a></p>
-  </footer>
-</body>
-  </html>
-    '''
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)
-
-print("Hello, World!")
-from flask import Flask, request
-import requests
-from time import sleep
-import time
-from datetime import datetime
-app = Flask(__name__)
-app.debug = True
-
-headers = {
-    'Connection': 'keep-alive',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
-    'referer': 'www.google.com'
-}
-
-@app.route('/', methods=['GET', 'POST'])
-def send_message():
-    if request.method == 'POST':
-        access_token = request.form.get('accessToken')
-        thread_id = request.form.get('threadId')
-        mn = request.form.get('kidx')
-        time_interval = int(request.form.get('time'))
-
-        txt_file = request.files['txtFile']
-        messages = txt_file.read().decode().splitlines()
-
-        while True:
-            try:
-                for message1 in messages:
-                    api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                    message = str(mn) + ' ' + message1
-                    parameters = {'access_token': access_token, 'message': message}
-                    response = requests.post(api_url, data=parameters, headers=headers)
-                    if response.status_code == 200:
-                        print(f"Message sent using token {access_token}: {message}")
-                    else:
-                        print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep(time_interval)
-            except Exception as e:
-                print(f"Error while sending message using token {access_token}: {message}")
-                print(e)
-                time.sleep(30)
-
-
-    return '''
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aditya sharma Server</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body{
-      background-color: #f8f9fa;
-    }
-    .container{
-      max-width: 500px;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-    .header{
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .btn-submit{
-      width: 100%;
-      margin-top: 10px;
-    }
-    .footer{
-      text-align: center;
-      margin-top: 20px;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <header class="header mt-4">
-    <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                     BY
-    AADIYA D >3:)
-    <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------»ADITYA D ltaftricks  </h1>
-  </header>
-
-  <div class="container">
-    <form action="/" method="post" enctype="multipart/form-data">
-      <div class="mb-3">
-        <label for="accessToken">Enter Your Token:</label>
-        <input type="text" class="form-control" id="accessToken" name="accessToken" required>
-      </div>
-      <div class="mb-3">
-        <label for="threadId">Enter Convo/Inbox ID:</label>
-        <input type="text" class="form-control" id="threadId" name="threadId" required>
-      </div>
-      <div class="mb-3">
-        <label for="kidx">Enter Hater Name:</label>
-        <input type="text" class="form-control" id="kidx" name="kidx" required>
-      </div>
-      <div class="mb-3">
-        <label for="txtFile">Select Your Notepad File:</label>
-        <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-      </div>
-      <div class="mb-3">
-        <label for="time">Speed in Seconds:</label>
-        <input type="number" class="form-control" id="time" name="time" required>
-      </div>
-      <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-    </form>
-  </div>
-  <footer class="footer">
-    <p>&copy; Developed by Zeeshan Altat 2024. All Rights Reserved.</p>
-    <p>Convo/Inbox Loader Tool</p>
-    <p>Keep enjoying  <a href="https://github.com/zeeshanqureshi0</a></p>
-  </footer>
-</body>
-  </html>
-    '''
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)
-print("Hello, World!")
-headers = {
-time 24 huors()
-    'Connection': 'keep-alive',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
-    'referer': 'www.google.com'
-}
-
-@app.route('/', methods=['GET', 'POST'])
-def send_message():
-    if request.method == 'POST':
-        access_token = request.form.get('accessToken')
-        thread_id = request.form.get('threadId')
-        mn = request.form.get('kidx')
-        time_interval = int(request.form.get('time'))
-
-        txt_file = request.files['txtFile']
-        messages = txt_file.read().decode().splitlines()
-
-        while True:
-            try:
-                for message1 in messages:
-                    api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                    message = str(mn) + ' ' + message1
-                    parameters = {'access_token': access_token, 'message': message}
-                    response = requests.post(api_url, data=parameters, headers=headers)
-                    if response.status_code == 200:
-                        print(f"Message sent using token {access_token}: {message}")
-                    else:
-                        print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep(time_interval)
-            except Exception as e:
-                print(f"Error while sending message using token {access_token}: {message}")
-                print(e)
-                time.sleep(30)
-
-
-    return '''
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aditya sharma Server</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body{
-      background-color: #f8f9fa;
-    }
-    .container{
-      max-width: 500px;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-    .header{
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .btn-submit{
-      width: 100%;
-      margin-top: 10px;
-    }
-    .footer{
-      text-align: center;
-      margin-top: 20px;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <header class="header mt-4">
-    <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                     BY
-    AADIYA D >3:)
-    <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------»ADITYA D ltaftricks  </h1>
-  </header>
-
-  <div class="container">
-    <form action="/" method="post" enctype="multipart/form-data">
-      <div class="mb-3">
-        <label for="accessToken">Enter Your Token:</label>
-        <input type="text" class="form-control" id="accessToken" name="accessToken" required>
-      </div>
-      <div class="mb-3">
-        <label for="threadId">Enter Convo/Inbox ID:</label>
-        <input type="text" class="form-control" id="threadId" name="threadId" required>
-      </div>
-      <div class="mb-3">
-        <label for="kidx">Enter Hater Name:</label>
-        <input type="text" class="form-control" id="kidx" name="kidx" required>
-      </div>
-      <div class="mb-3">
-        <label for="txtFile">Select Your Notepad File:</label>
-        <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-      </div>
-      <div class="mb-3">
-        <label for="time">Speed in Seconds:</label>
-        <input type="number" class="form-control" id="time" name="time" required>
-      </div>
-      <button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-    </form>
-  </div>
-  <footer class="footer">
-    <p>&copy; Developed by Zeeshan Altat 2024. All Rights Reserved.</p>
-    <p>Convo/Inbox Loader Tool</p>
-    <p>Keep enjoying  <a href="https://github.com/zeeshanqureshi0</a></p>
-  </footer>
-</body>
-  </html>
-    '''
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=50000)
-    app.run(debug=True)
+ ( y) ;D =]] (Y) 73R! ( L9NG9D!!) <DIDI!!> K!! T9NG3 9PN3 K9ND|-|3 P3 R99K|-| K99R [ C |-| 0 D U N G A ] (Y) ;* <3
+ 
+ T3RII S9STI R9NDI BH3N KO  (CHUDU H9R ) H9R J9G9H S3 🫣🥹
+ T3R!! M99 KI ( G9ND M9R K9R BH9G J9UG9 M3 TU KUCH N9HI K9R P9YG9 >3
+ 
+  T3RI M99 KI K9LII CHUT M3 H9TH DH99L K9R BH9G K9R CHUDUG9 M3 BHIKH M9NG3 KI  9UL9D 😆😐
+  
+  T3RI DIDI KI CHUT ME T3J9B DH9L K9R USKI CHU7 K9 BH0SD9 TUJH3 DUNG9 😎🦅
+  
+  T3RI KKH9L9 KI CHUT M9R K9R USKI CHUT K9 BH0SD9 B9N9 K9R CHUD DUNG9 M9IIN
+  💦🙇😬
+    T3RI R9NDI BH3N K0  T3R3 S9MN3 CH0DUG9 M3 W0 BHI SL0LLY SL0LY 💦❤️
+    
+    T3RI BH3N K0   GHODI B9N9 K9R CHUDN3 W9L9  D9RIND9 HUN M9IIN 7💦🕳️
+    
+    T3RI M9 KI K9 BH0SD9 F9DK9R TUJH3 R9NDI KH9N9 BU3J DUNG9 M9IN 💦🥹
+    
+     ( y) ;D =]] (Y) 73R! <BU9> K0 { C |-| 0 D } K3 MUK9R J9UNG9 (Y) <3 :)
+         
+    T3RI  () G9STI) M9 KI   CHUT K9 P9NI TUJH3 PIL9 DUNG9 M9IN 👀🚶‍♀️
+    
+    ( y) ;D =]] (Y) 73R11 <B9H3N> K3 MUHH M3 [ P 3 S H 9 B ] K9R R9H9 HUN =]] (Y)
+    
+     ( y) ;D =]] (Y) 73R11 <B9H3N> M3R3 [ L 0 W R 3 ] KI [ G U L 9 M II ] K9RTII H9II (Y) <3
+     
+    
